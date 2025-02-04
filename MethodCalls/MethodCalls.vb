@@ -16,9 +16,15 @@ Module MethodCalls
     End Sub
 
     Sub MyOtherSub()
-        Dim MyLuckyNumber As Integer = 5
+        Dim myLuckyNumber As Integer = 5
         Console.WriteLine("Hello from MyOtherSub!")
-        Console.WriteLine($"My Lucky Number is {MyLuckyNumber}!")
+        Console.WriteLine($"My Lucky Number is {myLuckyNumber}!")
+        SubSandWich()
+    End Sub
 
+    Sub SubSandWich(ByVal myLuckyNumber As Integer)
+
+        Console.WriteLine("Hello From Sandwich")
+        Console.WriteLine($"My Lucky Number is {myLuckyNumber}")
     End Sub
 End Module
